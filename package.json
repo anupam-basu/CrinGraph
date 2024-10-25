@@ -1,0 +1,14 @@
+{
+    "name": "cringraph",
+    "version": "1.0.0",
+    "description": "Super reviews squigs",
+    "main": "config.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Super Reviews",
+    "license": "ISC",
+    "devDependencies": {
+        "prettier": "^3.3.3"
+    }
+}
