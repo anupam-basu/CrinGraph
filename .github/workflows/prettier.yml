@@ -32,4 +32,4 @@ jobs:
                   git config --global user.name 'github-actions[bot]'
                   git config --global user.email 'github-actions[bot]@users.noreply.github.com'
                   git commit -am "style: format code with prettier"
-                  git push
+                  git push origin HEAD:main --force
