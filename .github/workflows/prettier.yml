@@ -17,7 +17,7 @@ jobs:
                   npm install -g prettier
 
             - name: Format code
-              run: prettier --write "**/*.{js,jsx,ts,tsx,css,scss,json,md,yaml,yml}"
+              run: npx prettier --write "**/*.{js,jsx,ts,tsx,css,scss,json,md,yaml,yml}"
 
             - name: Check for changes
               id: git-check
