@@ -7,6 +7,9 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
             - name: Setup Node.js
               uses: actions/setup-node@v4
               with:
@@ -17,8 +20,7 @@ jobs:
                   npm install -g prettier
 
             - name: Format code
-              run: npx prettier --write "**/*.{js,jsx,ts,tsx,css,scss,json,md,yaml,yml}"
-
+              run: prettier --write "**/*.{js,jsx,ts,tsx,css,scss,json,md,yaml,yml}"
             - name: Check for changes
               id: git-check
               run: |
